@@ -1,12 +1,36 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* @import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css'); */
+/* Reset styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -23,3 +47,44 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+.header {
+  padding: 20px 0;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #747bff;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;}
+
+  .gallery {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    row-gap: 20px;
+    column-gap: 24px;
+
+    overflow: hidden;
+    transition: 0.4;
+  }
