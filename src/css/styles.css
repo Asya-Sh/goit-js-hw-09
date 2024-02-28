@@ -33,41 +33,38 @@ img {
 
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   font-weight: 400;
 
-  color: #242424;
+  color: #2e2f42;
   background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
 
-.header {
-  padding: 20px 0;
-}
 
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+.btn {
+  font-size: 18px;
+  color: #8c14e7;
+  text-shadow: 1px 1px 1px #000000;
+  padding: 11px 39px;
+  box-shadow: 2px 3px 2px #e2e2e2;
+  border-radius: 36px;
+  border: 2px hidden #f3c846;
+  background: #e7e2d7;
+  background: linear-gradient(to top, #e7e2d7, #5803b8);
+    cursor: pointer;
+    width: 50px;
+  height: 20px;
+ margin: 20px 55px;
+ 
+ 
 }
-
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.bnt:hover {
+  color: #cccccc;
+  background: #f66d52;
+  background: linear-gradient(to top, #f66d52, #9e220a);
 }
 
 .gallery-image {
@@ -82,9 +79,5 @@ img {
     flex-wrap: wrap;
     justify-content: center;
   
-    row-gap: 20px;
-    column-gap: 24px;
-
-    overflow: hidden;
-    transition: 0.4;
+    gap: 24px;
   }
