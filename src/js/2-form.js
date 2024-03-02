@@ -8,13 +8,15 @@ document.addEventListener('DOMContentLoaded', renderPage);
 //  Функція для обробки подачі форми
 function onSubmitBtn (e){
     e.preventDefault();
-    const {email, message} = e.currentTarget.elements;
-      const userData = {
-        email: email.value.trim(), 
-        message: message.value.trim()};
+    const email = e.currentTarget.elements.email.value;
+    const message = e.currentTarget.elements.message.value;
+    const userData = {email, message};
+       if (!email.trim() || !message.trim())
+       {alert("Error: empty field!");
+       return;
+      }
+      console.log(userData);
       
-       if (!userData.email|| !userData.message) return console.log(userData);
-    
     e.target.reset();
     localStorage.removeItem(LS_KEY);
   };
@@ -46,10 +48,11 @@ function onSubmitBtn (e){
    
    function loadFromLS(key) {
      try {
-       return JSON.parse(localStorage.getItem(key)) || {};
-     } catch {
-       return {};
-     }
+      const storedData = localStorage.getItem(key);
+    return storedData === null ? undefined : JSON.parse(storedData);
+  } catch {
+    return storedData;
+  }
    };
 
    
