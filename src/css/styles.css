@@ -31,7 +31,6 @@ img {
   padding: 0;
 }
 
-
 :root {
   font-family: Montserrat, sans-serif;
   font-size: 16px;
@@ -43,33 +42,19 @@ img {
   background-color: rgba(255, 255, 255, 0.87);
 }
 
-
 .btn {
   font-size: 18px;
-  color: #8c14e7;
-  text-shadow: 1px 1px 1px #000000;
-  padding: 11px 39px;
-  box-shadow: 2px 3px 2px #e2e2e2;
-  border-radius: 36px;
-  border: 2px hidden #f3c846;
-  background: #e7e2d7;
-  background: linear-gradient(to top, #e7e2d7, #5803b8);
+  color: #2e2f42;
+  padding: 10px 30px;
     cursor: pointer;
     width: 50px;
   height: 20px;
- margin: 20px 55px;
- 
- 
 }
-.bnt:hover {
-  color: #cccccc;
-  background: #f66d52;
-  background: linear-gradient(to top, #f66d52, #9e220a);
-}
-
+/* 1-gallery */
 .gallery-image {
   width: 360px;
-  height: 200px;}
+  height: 200px;
+  transition: all ease-in 250ms;}
 
   .gallery {
     margin-top: 24px;
@@ -81,3 +66,73 @@ img {
   
     gap: 24px;
   }
+
+  .gallery-image:hover {
+    width: 376px;
+    height: 208px;
+  }
+  
+ .sl-image img {
+    width: 1112px;
+    height: 640px;
+  }
+
+ .simple-lightbox {
+  background-color: rgb(46,47,66,80%);
+ }
+
+/* 2-Form */
+.feedback-form {
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 296px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 8px;
+}
+
+[name='email'] {
+  width: 360px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 3.5px;
+  padding: 8px 16px;
+  font-weight: 400;
+font-size: 16px;
+}
+
+[name='email']:focus-within {
+  border: 1px solid black;
+}
+
+[name='message'] {
+  width: 360px;
+  height: 80px;
+  border: 1px solid #808080;
+  border-radius: 3.5px;
+  margin-bottom: 16px;
+  padding: 8px 16px;
+font-size: 16px;
+}
+
+button[type='submit'] {
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-top: 8px;
+  width: 120px;
+  height: 40px;
+  background-color: #4e75ff;
+  border: none;
+  color: #fff;
+font-weight: 500;
+font-size: 16px;
+  transition: all ease-in-out 250ms;
+}
+
+button[type='submit']:hover,
+button[type='submit']:focus {
+  background: #6c8cff;
+}
